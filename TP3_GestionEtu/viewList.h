@@ -1,13 +1,18 @@
 #pragma once
-#include "promotion.h"
+#include "observer.h"
+#include "qlistwidget.h"
 
 /**
  * @brief Class to manage the QListWidget
  * @author Adrien Peytavie
 */
-class ViewList
+class ViewList : public Observer, public QObject
 {
+	Promotion* promo;
+	QListWidget* list;
 public:
-	ViewList();
+	void deleteList();
+	void update();
+	ViewList(Promotion* p, QListWidget* li);
 };
 

@@ -7,12 +7,11 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     // Create Promotion
-    Promotion* promo;
-
+    Promotion* promo = new Promotion();
+    promo->loadCsv("../data/promoDUT.csv");
     // Create Interface
     TP3_GestionEtu w;
     w.show();
-
 
     return a.exec();
 }

@@ -1,0 +1,3 @@
+Dans list view si push button remove, get list de tout etu, crée controller des etudiants sur liste de selection
+Supression list --> notifie envoie update a toute les vues 
+recoit update viens chercher les data et les maj dans la view list

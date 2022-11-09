@@ -1,5 +1,16 @@
 #include "viewList.h"
 
-ViewList::ViewList()
+void ViewList::update()
 {
+}
+
+ViewList::ViewList(Promotion* p, QListWidget* li)
+{
+	promo = p;
+	this->list = li;
+}
+
+
+void ViewList::deleteList() {
+
 }

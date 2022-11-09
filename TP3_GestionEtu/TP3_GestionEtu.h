@@ -21,4 +21,6 @@ private:
     ViewForms* listForm;
     ViewPieChart* pieChartView;
     ViewHistogram* histogramView;
+private slots:
+    void deleteList();
 };
