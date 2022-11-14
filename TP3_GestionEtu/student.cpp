@@ -18,3 +18,18 @@ QString Student::getNom()
 {
 	return lastName;
 }
+
+QString Student::getPrenom()
+{
+	return firstName;
+}
+
+QString Student::getTypeBac()
+{
+	return typeBac;
+}
+
+QString Student::getDept()
+{
+	return dept;
+}

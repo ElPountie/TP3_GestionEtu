@@ -1,6 +1,8 @@
 #pragma once
 #include "observer.h"
 #include "qlistwidget.h"
+#include "promotion.h"
+#include "AbstractController.h"
 
 /**
  * @brief Class to manage the QListWidget

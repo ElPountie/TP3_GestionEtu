@@ -10,8 +10,9 @@ int main(int argc, char *argv[])
     Promotion* promo = new Promotion();
     promo->loadCsv("../data/promoDUT.csv");
     // Create Interface
-    TP3_GestionEtu w;
-    w.show();
+    TP3_GestionEtu w(promo);
 
+    w.show();
+    
     return a.exec();
 }

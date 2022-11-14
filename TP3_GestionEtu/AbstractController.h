@@ -1,6 +1,7 @@
 #pragma once
 #include <qlist.h>
-#include <qstring.h>
+#include <qstring.h>7
+#include "promotion.h"
 class AbstractController
 {
 public:
@@ -10,7 +11,10 @@ public:
 
 class ControllerDeleteList : public AbstractController
 {
+private:
+	Promotion* promo;
 public:
+	ControllerDeleteList(Promotion* p);
 	void control(QVector<QString> liste);
 };
 

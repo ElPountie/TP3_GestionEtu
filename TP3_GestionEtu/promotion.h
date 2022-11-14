@@ -9,13 +9,18 @@
 class Promotion : public Observable
 {
 	QVector<Student*> studentList;
-	Student* selectedStudent;
+	QVector<Student*> selectedStudent;
+	QVector<Observer*> observerList;
 public:
 	Promotion();
 	~Promotion();
 	void add(Student* stud);
-	void remove(Student* stud);
+	void remove(int num);
 	Student* find(QString name);
 	void loadCsv(const QString& filename);
+	void addObserver(Observer* observer);
+	void removeObserver(Observer* observer);
+	void notifyObserver() const;
+	QVector<Student*> getStudentList();
+	QVector<Student*> getSelectedStudent();
 };
-

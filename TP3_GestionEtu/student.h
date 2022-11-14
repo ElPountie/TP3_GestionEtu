@@ -15,5 +15,7 @@ public:
     Student(int _numEtu, QString _lastName, QString _firstName, QString _typeBac, QString _dept);
     int getNumEtu();
     QString getNom();
+    QString getPrenom();
+    QString getTypeBac();
+    QString getDept();
 };
-

@@ -1,3 +1,16 @@
 Dans list view si push button remove, get list de tout etu, crée controller des etudiants sur liste de selection
 Supression list --> notifie envoie update a toute les vues 
 recoit update viens chercher les data et les maj dans la view list
+
+/2 afficher la list 
+/2 suppr a partir de liste 
+/2 supr form
+/2 add form 
+/2 view graph1 
+/2 view graph2
+/2 Observer
+/2 MVC
+/2 Error
+/2 Doxygen
+/1 Selection multiple liste 
+/1 maj form après suppr 

@@ -2,13 +2,12 @@
 
 Promotion::Promotion()
 {
-    selectedStudent = nullptr;
 }
 
 Promotion::~Promotion()
 {
     this->studentList.clear();
-    delete selectedStudent;
+    this->selectedStudent.clear();
 }
 
 void Promotion::add(Student* stud)
@@ -16,13 +15,14 @@ void Promotion::add(Student* stud)
 	this->studentList.push_back(stud);
 }
 
-void Promotion::remove(Student* stud)
+void Promotion::remove(int num)
 {
 	for (int i = 0; i < studentList.size(); i++)
 	{
-		if (studentList.at(i)->getNumEtu() == stud->getNumEtu()) {
+		if (studentList.at(i)->getNumEtu() == num) {
 			studentList.removeAt(i);
-			break;
+            notifyObserver();
+            return;
 		}
 	}
 }
@@ -64,3 +64,30 @@ void Promotion::loadCsv(const QString& filename)
 
     else qDebug() << "Unable to open file" << filename << ": error" << myfile.error() << "," << myfile.errorString();
 }
+
+void Promotion::addObserver(Observer* observer)
+{
+    observerList.append(observer);
+}
+
+void Promotion::removeObserver(Observer* observer)
+{
+}
+
+void Promotion::notifyObserver() const
+{
+    for (auto index : observerList) {
+        index->update();
+    }
+}
+
+QVector<Student*> Promotion::getStudentList()
+{
+    return studentList;
+}
+
+QVector<Student*> Promotion::getSelectedStudent()
+{
+    return selectedStudent;
+}
+
