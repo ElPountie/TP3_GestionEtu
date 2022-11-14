@@ -2,6 +2,10 @@
 #include <qlist.h>
 #include <qstring.h>7
 #include "promotion.h"
+
+/**
+ * @brief class from which the controllers will inherit 
+*/
 class AbstractController
 {
 public:

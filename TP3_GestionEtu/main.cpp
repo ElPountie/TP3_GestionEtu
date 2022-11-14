@@ -2,6 +2,13 @@
 #include "promotion.h"
 #include <QApplication>
 
+/**
+ * @brief main function where we build the main window and the promotion
+ * @param argc 
+ * @param argv 
+ * @return execution of the application
+*/
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
