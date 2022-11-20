@@ -24,4 +24,5 @@ public:
 	void notifyObserver() const;
 	QVector<Student*> getStudentList();
 	QVector<Student*> getSelectedStudent();
+	int countStudenDept(int dept);
 };

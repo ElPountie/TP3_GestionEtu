@@ -104,3 +104,15 @@ QVector<Student*> Promotion::getSelectedStudent()
     return selectedStudent;
 }
 
+int Promotion::countStudenDept(int dept)
+{
+    int cpt = 0;
+    for (auto index : studentList)
+    {
+        if (index->getDept().toInt() == dept) {
+            cpt++;
+        }
+    }
+    return cpt;
+}
+
