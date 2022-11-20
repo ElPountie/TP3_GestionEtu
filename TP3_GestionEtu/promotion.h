@@ -16,6 +16,7 @@ public:
 	~Promotion();
 	void add(Student* stud);
 	void remove(int num);
+	void remove(Student* stud);
 	Student* find(QString name);
 	void loadCsv(const QString& filename);
 	void addObserver(Observer* observer);

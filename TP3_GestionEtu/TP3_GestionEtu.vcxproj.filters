@@ -72,9 +72,18 @@
     <ClCompile Include="AbstractController.cpp">
       <Filter>Controllers</Filter>
     </ClCompile>
+    <ClCompile Include="ControllerRemoveNumber.cpp">
+      <Filter>Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerAddStudent.cpp">
+      <Filter>Controllers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="TP3_GestionEtu.h">
+      <Filter>View</Filter>
+    </QtMoc>
+    <QtMoc Include="viewForms.h">
       <Filter>View</Filter>
     </QtMoc>
   </ItemGroup>
@@ -97,10 +106,13 @@
     <ClInclude Include="viewHistogram.h">
       <Filter>View</Filter>
     </ClInclude>
-    <ClInclude Include="viewForms.h">
-      <Filter>View</Filter>
-    </ClInclude>
     <ClInclude Include="AbstractController.h">
+      <Filter>Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerRemoveNumber.h">
+      <Filter>Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerAddStudent.h">
       <Filter>Controllers</Filter>
     </ClInclude>
   </ItemGroup>

@@ -145,6 +145,31 @@
             <height>22</height>
            </rect>
           </property>
+          <item>
+           <property name="text">
+            <string>S</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ES</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>STI2D</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>STMG</string>
+           </property>
+          </item>
          </widget>
          <widget class="QComboBox" name="lineEdit_add_department">
           <property name="geometry">

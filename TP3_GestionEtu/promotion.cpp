@@ -13,6 +13,7 @@ Promotion::~Promotion()
 void Promotion::add(Student* stud)
 {
 	this->studentList.push_back(stud);
+    notifyObserver();
 }
 
 void Promotion::remove(int num)
@@ -27,11 +28,23 @@ void Promotion::remove(int num)
 	}
 }
 
+void Promotion::remove(Student* stud)
+{
+    for (int i = 0; i < studentList.size(); i++)
+    {
+        if (studentList.at(i)->getNumEtu() == stud->getNumEtu()) {
+            studentList.removeAt(i);
+            notifyObserver();
+            return;
+        }
+    }
+}
+
 Student* Promotion::find(QString name)
 {
 	for (size_t i = 0; i < studentList.size(); i++)
 	{
-		if (studentList.at(i)->getNom() == name) {
+		if (studentList.at(i)->getNumEtu() == name.toInt()) {
 			return studentList.at(i);
 		}
 	}
