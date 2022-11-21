@@ -1,5 +1,9 @@
 #include "viewForms.h"
-
+/**
+ * @brief constructor of the view form
+ * @param ui element of the mainwindow
+ * @param promotion all the student 
+*/
 ViewForms::ViewForms(Ui::TP3_GestionEtuClass& ui, Promotion* promotion)
 {
 	identifiant = ui.lineEdit_add_number;
@@ -13,7 +17,9 @@ ViewForms::ViewForms(Ui::TP3_GestionEtuClass& ui, Promotion* promotion)
 	this->controller2 = ControllerAddStudent(promotion);
 }
 
-
+/**
+ * @brief action method when the delete button from the forms is push
+*/
 void ViewForms::buttonPush() {
 	QVector<QString> list;
 
@@ -22,7 +28,9 @@ void ViewForms::buttonPush() {
 
 }
 
-
+/**
+ * @brief action method whan the add button from the forms is clicked
+*/
 void ViewForms::buttonPush2() {
 	QVector<QString> list;
 

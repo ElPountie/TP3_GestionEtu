@@ -1,5 +1,7 @@
 #include "viewList.h"
-
+/**
+ * @brief method to update the promotion after any modification
+*/
 void ViewList::update()
 {
 	list->clear();
@@ -16,7 +18,11 @@ void ViewList::update()
 		list->addItem(listEtu);
 	}
 }
-
+/**
+ * @brief constructor of ViewList
+ * @param p promotion 
+ * @param li list of student in the Widget
+*/
 ViewList::ViewList(Promotion* p, QListWidget* li)
 {
 	promo = p;
@@ -24,7 +30,9 @@ ViewList::ViewList(Promotion* p, QListWidget* li)
 	update();
 }
 
-
+/**
+ * @brief delete the selected item on the list of student 
+*/
 void ViewList::deleteList() {
 	QList<QListWidgetItem*> listSelected = list->selectedItems();
 	QList<QString> listStrSelected;

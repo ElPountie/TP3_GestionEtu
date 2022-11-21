@@ -7,7 +7,9 @@
 #include "ui_TP3_GestionEtu.h"
 #include "ControllerAddStudent.h"
 
-
+/**
+ * @brief view class where you can delete a student with his number or add a new student
+*/
 class ViewForms : public QObject {
 	Q_OBJECT
 

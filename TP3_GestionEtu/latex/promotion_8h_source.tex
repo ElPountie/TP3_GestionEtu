@@ -1,0 +1,32 @@
+\hypertarget{promotion_8h_source}{}\doxysection{promotion.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}observer.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}student.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}qlist.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QFile>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QTextStream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_promotion}{Promotion}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observable}{Observable}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     QVector<Student*> studentList;}
+\DoxyCodeLine{14     QVector<Student*> selectedStudent;}
+\DoxyCodeLine{15     QVector<Observer*> observerList;}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_promotion_aa10833a0510fd7fdf3a8b7019ae61531}{Promotion}}();}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b}{\string~Promotion}}();}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_ac1bb623c45da16df4b783f44c7323304}{add}}(\mbox{\hyperlink{class_student}{Student}}* stud);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a0a699535e7226b9b0f5e42226e0a270e}{remove}}(\textcolor{keywordtype}{int} num);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a0a699535e7226b9b0f5e42226e0a270e}{remove}}(\mbox{\hyperlink{class_student}{Student}}* stud);}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_student}{Student}}* \mbox{\hyperlink{class_promotion_ad2685da06d89a43f8270baa137387304}{find}}(QString name);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_aac1b71298ff954214c5e1a2765bcb2c7}{loadCsv}}(\textcolor{keyword}{const} QString\& filename);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a2942d234082a29ccf3a4b262ee20e2df}{addObserver}}(\mbox{\hyperlink{class_observer}{Observer}}* observer);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_aca1b7f63c5993b80cf6e79a118eca699}{removeObserver}}(\mbox{\hyperlink{class_observer}{Observer}}* observer);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a0349d34a82cbe21fdc9cd860b9986e8e}{notifyObserver}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27     QVector<Student*> \mbox{\hyperlink{class_promotion_a24095d5629f5b6bbee93751b101feb54}{getStudentList}}();}
+\DoxyCodeLine{28     QVector<Student*> \mbox{\hyperlink{class_promotion_a3456b38cdc918d425b192a1cb70f437a}{getSelectedStudent}}();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_promotion_a88a3e22f358662cfda1fbbb018b8b7de}{countStudenDept}}(\textcolor{keywordtype}{int} dept);}
+\DoxyCodeLine{30 \};}
+
+\end{DoxyCode}

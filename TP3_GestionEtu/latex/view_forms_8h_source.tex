@@ -1,0 +1,33 @@
+\hypertarget{view_forms_8h_source}{}\doxysection{view\+Forms.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}promotion.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}ControllerRemoveNumber.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}ui\_TP3\_GestionEtu.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}ControllerAddStudent.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_forms}{ViewForms}} : \textcolor{keyword}{public} QObject \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_forms_a356e8cac7f610210cc223fdd727aec50}{buttonPush}}();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_forms_a43cc627d55c79a82c79c3363a86758af}{buttonPush2}}();}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_view_forms}{ViewForms}}(Ui::TP3\_GestionEtuClass\& ui, \mbox{\hyperlink{class_promotion}{Promotion}}* promotion);}
+\DoxyCodeLine{21 \textcolor{keyword}{private}:}
+\DoxyCodeLine{22     QLineEdit* identifiant;}
+\DoxyCodeLine{23     QLineEdit* firstname;}
+\DoxyCodeLine{24     QLineEdit* lastname;}
+\DoxyCodeLine{25     QComboBox* bac;}
+\DoxyCodeLine{26     QComboBox* departement;}
+\DoxyCodeLine{27     QLineEdit* identifiant2;}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_controller_remove_number}{ControllerRemoveNumber}} controller;}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_controller_add_student}{ControllerAddStudent}} controller2;}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+
+\end{DoxyCode}

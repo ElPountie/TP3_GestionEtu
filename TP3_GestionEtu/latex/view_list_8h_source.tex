@@ -1,0 +1,21 @@
+\hypertarget{view_list_8h_source}{}\doxysection{view\+List.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}observer.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}qlistwidget.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}promotion.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}AbstractController.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_list}{ViewList}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}}, \textcolor{keyword}{public} QObject}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_promotion}{Promotion}}* promo;}
+\DoxyCodeLine{14     QListWidget* list;}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_list_a54a472c1f1832bbddc64ee78f9cec722}{deleteList}}();}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_list_a64a66e410e17c128d236e82ec79ae4f4}{update}}();}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_view_list}{ViewList}}(\mbox{\hyperlink{class_promotion}{Promotion}}* p, QListWidget* li);}
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{20 }
+
+\end{DoxyCode}

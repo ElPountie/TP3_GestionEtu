@@ -1,12 +1,16 @@
 #pragma once
 
-
+/**
+ * @brief abstract Observer class
+*/
 class Observer {
 public:
   virtual ~Observer() {}
   virtual void update() = 0;
 };
-
+/**
+ * @brief Abstract Observable class
+*/
 class Observable {
 public:
   virtual ~Observable() {}

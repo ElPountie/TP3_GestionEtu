@@ -1,6 +1,10 @@
 #include "TP3_GestionEtu.h"
 #include"ui_TP3_GestionEtu.h"
-
+/**
+ * @brief Constructor of the QMainWindow 
+ * @param p promotion of student
+ * @param parent Eventual parent of the widget 
+*/
 TP3_GestionEtu::TP3_GestionEtu(Promotion* p,QWidget *parent)
     : QMainWindow(parent)
 {

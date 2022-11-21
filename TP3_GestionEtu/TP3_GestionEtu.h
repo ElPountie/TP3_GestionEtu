@@ -6,7 +6,9 @@
 #include "viewForms.h"
 #include "viewPieChart.h"
 #include "viewHistogram.h"
-
+/**
+ * @brief class of the main window
+*/
 class TP3_GestionEtu : public QMainWindow
 {
     Q_OBJECT

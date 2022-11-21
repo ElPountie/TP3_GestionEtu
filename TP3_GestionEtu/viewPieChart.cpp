@@ -1,5 +1,8 @@
 #include "viewPieChart.h"
-
+/**
+ * @brief constructor of the ViewPieChart class
+ * @param p 
+*/
 ViewPieChart::ViewPieChart(Promotion* p)
 {
 	mypie = new QPieSeries();
@@ -8,7 +11,9 @@ ViewPieChart::ViewPieChart(Promotion* p)
 	promo = p;
 	update();
 }
-
+/**
+ * @brief update the view after any modification
+*/
 void ViewPieChart::update() {
 	mypie->clear();
 
@@ -23,7 +28,10 @@ void ViewPieChart::update() {
 	myview->setChart(mychart);
 	myview->setRenderHint(QPainter::Antialiasing);
 }
-
+/**
+ * @brief method to get the widget
+ * @return myview
+*/
 QWidget* ViewPieChart::getMyview()
 {
 	return myview;
