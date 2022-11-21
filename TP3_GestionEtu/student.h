@@ -1,7 +1,9 @@
 #pragma once
 #include "qstring.h"
 using namespace std;
-
+/**
+ * @brief Student class with all his information
+*/
 class Student
 {
 private:

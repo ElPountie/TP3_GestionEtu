@@ -5,7 +5,9 @@
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
-
+/**
+ * @brief Promotion class with all the student and observer
+*/
 class Promotion : public Observable
 {
 	QVector<Student*> studentList;
