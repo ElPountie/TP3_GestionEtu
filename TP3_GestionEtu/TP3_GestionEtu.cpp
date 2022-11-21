@@ -22,8 +22,13 @@ TP3_GestionEtu::TP3_GestionEtu(Promotion* p,QWidget *parent)
     grp_dept = new QGridLayout(ui.groupBox_department);
     grp_dept->addWidget(pieChartView->getMyview());
 
+    histogramView = new ViewHistogram(p);
+    histo_grp = new QGridLayout(ui.groupBox_bacs);
+    histo_grp->addWidget(histogramView->getMyView());
+
     promo->addObserver(listView);
     promo->addObserver(pieChartView);
+    promo->addObserver(histogramView);
     connect(ui.pushButton_delete_list, &QPushButton::clicked, listView, &ViewList::deleteList);
     connect(ui.pushButton_delete_number, &QPushButton::clicked, listForm, &ViewForms::buttonPush);
     connect(ui.pushButton_addStudent, &QPushButton::clicked, listForm, &ViewForms::buttonPush2);

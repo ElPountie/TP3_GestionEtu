@@ -25,4 +25,6 @@ private:
     ViewHistogram* histogramView;
     Promotion* promo;
     QGridLayout* grp_dept;
+    QGridLayout* histo_grp;
+
 };

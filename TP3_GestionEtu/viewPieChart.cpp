@@ -5,23 +5,23 @@
 */
 ViewPieChart::ViewPieChart(Promotion* p)
 {
-	mypie = new QPieSeries();
-	mychart = new QChart();
-	myview = new QChartView();
 	promo = p;
+	myview = new QChartView();
 	update();
 }
 /**
  * @brief update the view after any modification
 */
 void ViewPieChart::update() {
+	QPieSeries* mypie = new QPieSeries();
+	QChart* mychart = new QChart();
 	mypie->clear();
 
 	for (int i = 1; i < 96; i++)
 	{
-		mypie->append(""+i, promo->countStudenDept(i));
+		mypie->append("", promo->countStudenDept(i));
 	}
-	
+
 	mychart->addSeries(mypie);
 	mychart->setTitle("Eleves par depratement");
 

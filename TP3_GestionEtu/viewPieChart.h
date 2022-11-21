@@ -11,8 +11,6 @@
 class ViewPieChart : public Observer 
 {
 private:
-	QPieSeries *mypie;
-	QChart* mychart;
 	QChartView* myview;
 	Promotion* promo;
 public:

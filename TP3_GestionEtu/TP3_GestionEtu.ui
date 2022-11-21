@@ -157,17 +157,7 @@
           </item>
           <item>
            <property name="text">
-            <string>L</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>STI2D</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>STMG</string>
+            <string>STI</string>
            </property>
           </item>
          </widget>

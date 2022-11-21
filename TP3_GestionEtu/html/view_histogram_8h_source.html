@@ -73,14 +73,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_view_histogram.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_view_histogram.html">ViewHistogram</a> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_function" href="class_view_histogram.html#ac52b2bba24a57199dc6e213931bc1234">ViewHistogram</a>();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="ttc" id="aclass_view_histogram_html"><div class="ttname"><a href="class_view_histogram.html">ViewHistogram</a></div><div class="ttdoc">class that craeate an Histogram Qchart</div><div class="ttdef"><b>Definition:</b> viewHistogram.h:6</div></div>
-<div class="ttc" id="aclass_view_histogram_html_ac52b2bba24a57199dc6e213931bc1234"><div class="ttname"><a href="class_view_histogram.html#ac52b2bba24a57199dc6e213931bc1234">ViewHistogram::ViewHistogram</a></div><div class="ttdeci">ViewHistogram()</div><div class="ttdoc">constructor of ViewHistogram class</div><div class="ttdef"><b>Definition:</b> viewHistogram.cpp:5</div></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include&lt;qwidget.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&lt;QtCharts/qbarseries.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&lt;QtCharts/qchartview.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;promotion.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_view_histogram.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_view_histogram.html">ViewHistogram</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_observer.html">Observer</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>private : </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_class" href="class_promotion.html">Promotion</a>* promo;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    QChartView* chartView;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_view_histogram.html">ViewHistogram</a>(<a class="code hl_class" href="class_promotion.html">Promotion</a>* p);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_view_histogram.html#ac982322419a53d2b27af940e11db8c39">update</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    QChartView* getMyView();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="ttc" id="aclass_observer_html"><div class="ttname"><a href="class_observer.html">Observer</a></div><div class="ttdoc">abstract Observer class</div><div class="ttdef"><b>Definition:</b> observer.h:6</div></div>
+<div class="ttc" id="aclass_promotion_html"><div class="ttname"><a href="class_promotion.html">Promotion</a></div><div class="ttdoc">Promotion class with all the student and observer.</div><div class="ttdef"><b>Definition:</b> promotion.h:12</div></div>
+<div class="ttc" id="aclass_view_histogram_html"><div class="ttname"><a href="class_view_histogram.html">ViewHistogram</a></div><div class="ttdoc">class that craeate an Histogram Qchart</div><div class="ttdef"><b>Definition:</b> viewHistogram.h:10</div></div>
+<div class="ttc" id="aclass_view_histogram_html_ac982322419a53d2b27af940e11db8c39"><div class="ttname"><a href="class_view_histogram.html#ac982322419a53d2b27af940e11db8c39">ViewHistogram::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">update method called when modification are made</div><div class="ttdef"><b>Definition:</b> viewHistogram.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

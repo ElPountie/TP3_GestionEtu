@@ -2,11 +2,20 @@
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
-\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_histogram}{ViewHistogram}} }
-\DoxyCodeLine{6 \{}
-\DoxyCodeLine{7 \textcolor{keyword}{public}:}
-\DoxyCodeLine{8     \mbox{\hyperlink{class_view_histogram_ac52b2bba24a57199dc6e213931bc1234}{ViewHistogram}}();}
-\DoxyCodeLine{9 \};}
-\DoxyCodeLine{10 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include<qwidget.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<QtCharts/qbarseries.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<QtCharts/qchartview.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}promotion.h"{}}}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_histogram}{ViewHistogram}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 private : }
+\DoxyCodeLine{12     \mbox{\hyperlink{class_promotion}{Promotion}}* promo;}
+\DoxyCodeLine{13     QChartView* chartView;}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_view_histogram}{ViewHistogram}}(\mbox{\hyperlink{class_promotion}{Promotion}}* p);}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_histogram_ac982322419a53d2b27af940e11db8c39}{update}}();}
+\DoxyCodeLine{17     QChartView* getMyView();}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
 
 \end{DoxyCode}
