@@ -22,4 +22,5 @@ private:
     ViewPieChart* pieChartView;
     ViewHistogram* histogramView;
     Promotion* promo;
+    QGridLayout* grp_dept;
 };

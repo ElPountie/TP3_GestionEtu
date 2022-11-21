@@ -8,7 +8,7 @@
  * @brief Class to manage the PieChart View
  * @author Adrien Peytavie
 */
-class ViewPieChart 
+class ViewPieChart : public Observer 
 {
 private:
 	QPieSeries *mypie;
@@ -17,5 +17,7 @@ private:
 	Promotion* promo;
 public:
 	ViewPieChart(Promotion* p);
+	void update();
+	QWidget* getMyview();
 };
 

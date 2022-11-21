@@ -2,6 +2,7 @@
 #include "AbstractController.h"
 #include"promotion.h"
 
+
 class ControllerAddStudent : public AbstractController {
 private:
 	Promotion* promotion;
